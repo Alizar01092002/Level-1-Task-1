@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <script src="https://kit.fontawesome.com/e25860e8c3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+         *{
+            margin: auto;
+            padding: auto;
+            font-family: 'Playfair Display', serif;
+        }
+        .header{
+            min-height: 100vh;
+            width: 100%;
+            background-image: url("background_map.jpg");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav_links{
+            flex: 1;
+            text-align: right;
+        }
+        .nav_links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+        }
+        .nav_links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .nav_links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336 ;
+            display: block ;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav_links ul li:hover::after{
+            width: 100%;
+        }
+        .Text_box h1{
+            font-size: 30px;
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 45%;
+            left: 2.5%;
+            text-align: left;        
+        }
+        .Text_box h2{
+            font-size: 45px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 2.5%;
+            text-align: left;
+        }
+        .Text_box p{
+            font-size: 20px;
+            width: 50%;
+            color: #fff;
+            position: absolute;
+            top: 60%;
+            left: 2.5%;
+            text-align: left;
+        }
+        .Destination{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .Destination h1{
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .Destination p{
+            color:#777;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .col:hover{
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+        }
+        .row div img{
+            width: 300px;
+            height: 400px;
+        }
+        .col{
+            
+            border-radius: 10px;
+            transition: 1s;
+            padding: 10px;
+        }
+        .About{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .About h2{
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .About p{
+            color:#777;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+        .About div img{
+            width: 350px;
+            height: 400px;
+        }
+        .Col:hover{
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+        }
+        
+        .Col{
+            padding: 20px;
+            align-items: center;
+            transition: 0.5s;
+            
+        }
+        
+        .footer{
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .footer p{
+            color: #777;
+        }
+        .footer a,i{
+            color: black;
+            font-size: larger;
+        }
+        .footer h2{
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: 600;
+            font-weight: bold;
+        }
+        .icons{
+            color: #f44336;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            size: 10px;
+        }
+        .fa-heart-o{
+            color: #f44336;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="">DESTINATIONS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="Text_box">
+            <h1>Welcome To</h1>
+            <h2>AERO SPACE AIR TRAVEL</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati distinctio nulla facere dolorum fugit, rem laudantium, inventore,<br> illum ipsam at temporibus expedita error eaque. Consequatur esse quam beatae est aspernatur at rerum neque dolores explicabo!</p>
+        </div>
+    </section>
+    <section class="Destination">
+        <h1>Destinations</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, ab facere.</p>
+        <div class="row">
+
+            <div class="col">
+                <img src="karbala-image.jpg">
+                <p class="name"><b>IRAQ</b></p>
+            </div>
+            
+            <div class="col">
+                <img src="masjid-e-jamkran.webp">
+                <p class="name"><b>IRAN</b></p>
+            </div>
+            
+            <div class="col">
+                <img src="lady_zainab_shrine.webp">
+                <p class="name"><b>SYRIA</b></p>
+            </div>
+        </div>
+            
+    </section>
+    <br>
+    <section class="About">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, doloribus cumque iusto sit accusamus voluptatibus ea <br> dignissimos vitae ipsam eveniet saepe necessitatibus aspernatur a? Cupiditate culpa delectus tempora impedit repudiandae.</p>
+        <div class="row">
+            <div class="Col">
+                <img src="Alizar_photo.jpeg" alt="">
+                <p>MIRZA MOHAMMAD ALIZAR<br> Owner of AERO SPACE AIR TRAVEL</p>
+                <p>http://www.aerospaceairtravel.com/home/
+                    Dear Traveller,
+                    Its being a pleasure for us to serve you time and again.Since The Establishment (2005)of “Aero Space Air Travels” a Travel agent and tour operators company. 
+                    
+                    “Aero Space Air Travels” is Managed by highly motivated, qualified and professional people with travel background. Depth of experience is the key for us. 
+                    
+                    We “Aero Space” are based in the hearth of the city Ghaziabad-Delhi NCR  region just 45 minutes drive from ITO. Its location in the center of the city gives over valued clients easy approach, in time service. In its close proximity, Hotel Apple Tree, Mela Palaza, Hotel fortune gives great deals in serving guest.
+                    
+                    “Aero Space Air Travels” have USP of doing Hindu Religious Packages. But Leisure Tours are fun to operate and driving force for motivation.
+                    
+                    In the leadership “Mirza Ghalib Ali” we are gotago team.
+                    
+                    Why Aero Space Air Travels ? 
+                    In the leadership of our experienced  Management we brings expertise in the field and enhanced value.
+                    
+                    Our leader is qualified “Dubai Expert” Aussis Specialist, Certified Cruise line expert of CLIK, agent of “Globus and Cosmos” 150 year old European travel exert.Which is gives an edge above the rest in the competition.
+                    
+                    OUR PRODUCTS
+                    1. Air Tickets
+                    Air reservation /Rail reservationAll domestic and international air tickets at reasonable price (booking on advanced crs systems)  
+                    2.DOMESTIC TOURS
+                    
+                    Leasure Packages
+                    
+                    (A) GOA   3*/4*/5* Hotesl & Packages
+                    
+                    (B) Kerla customized tour for- cochi, munnar, thekkadi, pariyar, kovlam etc as per your need
+                    
+                    (C)Tours for Bagdogra- Darjeeling-Gangtok-Klimpong-Doorsa
+                    
+                    (D)Packages for Kashmir (srinagar-gulmarg-pahalgam-sonmarg)
+                    
+                    (E)Hotels packages for kullu manali-shimla- nainital
+                    
+                    (F)Air packages for portblair
+                    
+                    3.Wildlife packages
+                    Corbett National park,
+                    Sariska National park
+                    Dudhwa National park
+                    
+                    4.Desert SafariComplete tour package for Rajasthan
+                    (Jaipur –Udaipur- Mountabu-Jaisalmer Jodhpur-Bekanair-Ajmer-Pushkar)
+                    
+                    5. Religious package tour
+                    Specialised helicopter amaranth Yatra
+                    Vaishnodevi helicopter Yatra packages
+                    Tirupati balaji guaranteed darshan package
+                    Somnath darshan with Dwarka ji
+                    South darshan- madurai-rameswaram-kanyakumari-trivendram
+                    
+                    INTERNATIONAL TOUR PACKAGES
+                    
+                    All leisure tour packages
+                    Far East:-Singopore,Malaysia,Thailand- Indonesia-Bali
+                    
+                    Europe- UK –Paris,Italy,Spain, Portugal,Germany,France,Turkey
+                    
+                    Middle East– Dubai-Mauritius-Maldives   etc 
+                    
+                    5. LTC PACKAGES FOR GOVERNMENT EMPLOYES</p>
+            </div>
+        </div>
+        
+    </section>
+    <section class="footer">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ex.</p>
+        <br>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:mirza2021csai116@abesit.edu.in">mirza2021csai116@abesit.edu.in</a>
+        <div class="icons">
+            <a href="http://facebook.com"> <i class="fa fa-facebook-square"></i></a>
+            <a href="http://linkedin.com"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="map.jpeg">
+                <p><b>Address</b><br>20/9 Lal Quarter Lohia Nagar, Ghaziabad</p>
+            </div>
+        </div>
+        <br>
+        <p1>Made with <i class="fa fa-heart-o"></i> by <b>OASIS INFOBYTE</b><p1>
+    </section>
+    
+</body>
+</html>
